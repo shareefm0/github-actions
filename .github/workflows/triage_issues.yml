@@ -1,4 +1,4 @@
-name: "Label Issues for Triage"
+name: "Label Issues for Question"
 on:
   issues:
     types:
@@ -15,4 +15,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: triage
+          LABELS: question
